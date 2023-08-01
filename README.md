@@ -1,6 +1,7 @@
 # restro-crud-api
 A CRUD application built around Golang.
-AIM:  
+
+# AIM:  
 
 To create a simple microservice that will implement basic functionalities for a Restaurant Management System. 
 
