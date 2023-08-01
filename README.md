@@ -27,7 +27,7 @@ To create a simple microservice that will implement basic functionalities for a 
 
 -A user cannot use the login api in this current system because only an admin can login by passing his credentials to the request header. 
 
-(B)Admin: 
+(B) Admin: 
 
 -An Admin can call all the REST apis. 
 
@@ -39,7 +39,7 @@ To create a simple microservice that will implement basic functionalities for a 
 
 # Endpoints: 
 
-/api/login: This endpoint will generate the jwt token for the admin. 
+1) /api/login: This endpoint will generate the jwt token for the admin. 
 
 Request Payload: None 
 
@@ -51,7 +51,7 @@ Response: Status Code along with JWT token.
 
  
 
-/api/view: This endpoint will display the entire list of food items present in the database. 
+2) /api/view: This endpoint will display the entire list of food items present in the database. 
 
 Request Payload: None 
 
@@ -63,7 +63,7 @@ Response: Status Code along with the list of food items.
 
  
 
-/api/view/{name}: This endpoint will display the food item of the corresponding {name} passed in the URL and present in the database. 
+3) /api/view/{name}: This endpoint will display the food item of the corresponding {name} passed in the URL and present in the database. 
 
 Request Payload: None 
 
@@ -75,7 +75,7 @@ Response: Status Code along with the description of the food item.
 
  
 
-/api/add: This endpoint will allow only the 'admin' to add a food item into the database. 
+4) /api/add: This endpoint will allow only the 'admin' to add a food item into the database. 
 
 Request Payload: Food Item in JSON format 
 
@@ -87,7 +87,7 @@ Response: Status Code along with an output message
 
  
 
-/api/delete: This endpoint allows the admin to delete a food item from the database. 
+5) /api/delete: This endpoint allows the admin to delete a food item from the database. 
 
 Request Payload: Food Item in JSON format 
 
@@ -103,7 +103,7 @@ Response: Status Code along with an output message
 
  
 
-/api/update: This endpoint will allow the admin to update an existing food item. 
+6) /api/update: This endpoint will allow the admin to update an existing food item. 
 
 Request Payload: Food Item in JSON format 
 
