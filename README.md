@@ -1,5 +1,11 @@
 # restro-crud-api
 A CRUD application built around Golang.
+Implemented:
+a) Authentication System for login purposes.
+b) An Authorization middleware to protect enpoints.
+c) REST apis to communicate with the server and handled routes using the Go's MUX router.
+d) Postgresql to store data.
+
 
 # AIM:  
 
