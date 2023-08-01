@@ -42,7 +42,7 @@ To create a simple microservice that will implement basic functionalities for a 
 
 1. **/api/login**: This endpoint will generate the jwt token for the admin. 
 
-- *Request Payload: None
+- Request Payload: None
 - Method: GET 
 - Request Headers: Username, Password 
 - Response: Status Code along with JWT token*
@@ -51,41 +51,41 @@ To create a simple microservice that will implement basic functionalities for a 
 
 2. **/api/view**: This endpoint will display the entire list of food items present in the database. 
 
-*Request Payload: None.
-Method: GET.
-Request Headers: None.
-Response: Status Code along with the list of food items.*
+- Request Payload: None.
+- Method: GET.
+- Request Headers: None.
+- Response: Status Code along with the list of food items.*
 
  
 
 3. **/api/view/{name}**: This endpoint will display the food item of the corresponding {name} passed in the URL and present in the database. 
 
-*Request Payload: None 
-Method: GET 
-Request Headers: None 
-Response: Status Code along with the description of the food item.*
+- Request Payload: None 
+- Method: GET 
+- Request Headers: None 
+- Response: Status Code along with the description of the food item.*
 
  
 
 4. **/api/add**: This endpoint will allow only the 'admin' to add a food item into the database. 
 
-*Request Payload: Food Item in JSON format 
-Method: POST 
-Request Headers: JWT Token 
-Response: Status Code along with an output message.*
+- Request Payload: Food Item in JSON format 
+- Method: POST 
+- Request Headers: JWT Token 
+- Response: Status Code along with an output message.*
 
  
 
 5. **/api/delete**: This endpoint allows the admin to delete a food item from the database. 
 
-*Request Payload: Food Item in JSON format 
-Method: DELETE 
-Request Headers: JWT Token 
-Response: Status Code along with an output message.* 
+- Request Payload: Food Item in JSON format 
+- Method: DELETE 
+- Request Headers: JWT Token 
+- Response: Status Code along with an output message.* 
 
  
 6. **/api/update**: This endpoint will allow the admin to update an existing food item. 
-*Request Payload: Food Item in JSON format 
-Method: PUT 
-Request Headers: JWT Token 
-Response: Status Code along with an output message.*
+- Request Payload: Food Item in JSON format 
+- Method: PUT 
+- Request Headers: JWT Token 
+- Response: Status Code along with an output message.*
