@@ -51,10 +51,10 @@ Response: Status Code along with JWT token*
 
 2. **/api/view**: This endpoint will display the entire list of food items present in the database. 
 
-*Request Payload: None 
-Method: GET 
-Request Headers: None 
-Response: Status Code along with the list of food items.* 
+*Request Payload: None.
+Method: GET.
+Request Headers: None.
+Response: Status Code along with the list of food items.*
 
  
 
