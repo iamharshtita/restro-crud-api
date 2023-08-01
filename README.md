@@ -5,7 +5,7 @@ A CRUD application built around Golang.
 
 To create a simple microservice that will implement basic functionalities for a Restaurant Management System. 
 
-Functionalities: 
+# Functionalities: 
 
 1-To view the entire menu of the restaurant (Anyone) 
 
@@ -17,7 +17,7 @@ Functionalities:
 
 5-To modify an existing food item (Admin) 
 
-Roles: 
+# Roles: 
 
 (A) User: 
 
@@ -35,4 +35,80 @@ Roles:
 
 -Upon successful authentication, the admin will be granted a JWT. 
 
--The JWT can be used for authorization purpose to authorize the admin to make any kind of modifications to the database. 
+-The JWT can be used for authorization purpose to authorize the admin to make any kind of modifications to the database.
+
+# Endpoints: 
+
+/api/login: This endpoint will generate the jwt token for the admin. 
+
+Request Payload: None 
+
+Method: GET 
+
+Request Headers: Username, Password 
+
+Response: Status Code along with JWT token. 
+
+ 
+
+/api/view: This endpoint will display the entire list of food items present in the database. 
+
+Request Payload: None 
+
+Method: GET 
+
+Request Headers: None 
+
+Response: Status Code along with the list of food items. 
+
+ 
+
+/api/view/{name}: This endpoint will display the food item of the corresponding {name} passed in the URL and present in the database. 
+
+Request Payload: None 
+
+Method: GET 
+
+Request Headers: None 
+
+Response: Status Code along with the description of the food item. 
+
+ 
+
+/api/add: This endpoint will allow only the 'admin' to add a food item into the database. 
+
+Request Payload: Food Item in JSON format 
+
+Method: POST 
+
+Request Headers: JWT Token 
+
+Response: Status Code along with an output message 
+
+ 
+
+/api/delete: This endpoint allows the admin to delete a food item from the database. 
+
+Request Payload: Food Item in JSON format 
+
+Method: DELETE 
+
+Request Headers: JWT Token 
+
+Response: Status Code along with an output message 
+
+ 
+
+ 
+
+ 
+
+/api/update: This endpoint will allow the admin to update an existing food item. 
+
+Request Payload: Food Item in JSON format 
+
+Method: PUT 
+
+Request Headers: JWT Token 
+
+Response: Status Code along with an output message 
