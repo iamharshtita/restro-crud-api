@@ -42,10 +42,10 @@ To create a simple microservice that will implement basic functionalities for a 
 
 1. **/api/login**: This endpoint will generate the jwt token for the admin. 
 
-*Request Payload: None
+Request Payload: None
 Method: GET 
 Request Headers: Username, Password 
-Response: Status Code along with JWT token*
+Response: Status Code along with JWT token
 
  
 
