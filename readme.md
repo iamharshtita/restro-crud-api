@@ -4,7 +4,7 @@ A CRUD application built around Golang.
 1. Authentication System for login purpose.
 2. An Authorization Middleware to protect enpoints.
 3. REST apis to communicate with the server and handled routes using the Go's MUX router.
-4. Queries to communicare with the Postgresql DB.
+4. Queries to communicate with the Postgresql DB.
 
 
 ## AIM:  
